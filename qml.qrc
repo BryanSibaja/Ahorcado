@@ -1,6 +1,7 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
+        <file>Letra.qml</file>
+        <file>Teclado.qml</file>
     </qresource>
 </RCC>
-

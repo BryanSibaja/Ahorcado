@@ -2,18 +2,17 @@ import QtQuick 2.3
 import QtQuick.Window 2.2
 
 Window {
+    id: ventana
+    width: 800
+    height: 600
+    title: "HangMan"
     visible: true
 
-    MouseArea {
-        anchors.fill: parent
-        onClicked: {
-            Qt.quit();
-        }
+    Teclado {
+        id: teclado1
+        x: 264
+        y: 497
     }
 
-    Text {
-        text: qsTr("Hello World")
-        anchors.centerIn: parent
     }
-}
 
