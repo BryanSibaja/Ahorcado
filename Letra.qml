@@ -29,8 +29,21 @@ Rectangle {
         verticalAlignment: Text.AlignVCenter
     }
 
+
+    NumberAnimation {
+        id: ocultar
+        targets: [texto, rectangulo]
+        properties: "opacity"
+        from: 1; to: 0
+        duration: 200
+    }
+
     MouseArea {
         id: areaMouse
         anchors.fill: parent
+        onClicked: {
+            ocultar.start();
+            enabled = false;
+        }
     }
 }

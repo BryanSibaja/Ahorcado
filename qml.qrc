@@ -3,5 +3,6 @@
         <file>main.qml</file>
         <file>Letra.qml</file>
         <file>Teclado.qml</file>
+        <file>Globos.gif</file>
     </qresource>
 </RCC>

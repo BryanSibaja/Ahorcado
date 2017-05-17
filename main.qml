@@ -10,9 +10,27 @@ Window {
 
     Teclado {
         id: teclado1
-        x: 264
-        y: 497
+        x: 134
+        y: 514
     }
 
+    AnimatedImage{
+        id: globos
+        x: 420
+        y: 78
+        width: 325
+        height: 411
+        currentFrame: 0
+        source: "Globos.gif"
+        playing: false
+
+        MouseArea{
+            id: areaMouse
+            anchors.fill: parent
+            onClicked: {
+                globos.currentFrame += 1
+            }
+        }
     }
+}
 
