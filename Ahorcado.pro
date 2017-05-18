@@ -13,5 +13,11 @@ QML_IMPORT_PATH =
 # Default rules for deployment.
 include(deployment.pri)
 
-DISTFILES +=
+DISTFILES += \
+    logica.js \
+    datos.json \
+    Pantalla.qml \
+    Letra.qml \
+    Teclado.qml \
+    Globos.qml
 

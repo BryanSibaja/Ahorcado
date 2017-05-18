@@ -6,6 +6,7 @@ Rectangle {
     y: 0
     width: 40
     height: 40
+    radius: 8
     gradient: Gradient {
         GradientStop {
             position: 0

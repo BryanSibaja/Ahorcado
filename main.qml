@@ -1,5 +1,6 @@
 import QtQuick 2.3
 import QtQuick.Window 2.2
+import "logica.js" as Experto
 
 Window {
     id: ventana
@@ -8,29 +9,28 @@ Window {
     title: "HangMan"
     visible: true
 
+    MouseArea {
+        anchors.fill: parent
+        onClicked: {
+            pantalla.text = Experto.obtenerPalabra()
+        }
+    }
+
     Teclado {
         id: teclado1
         x: 134
         y: 514
     }
 
-    AnimatedImage{
-        id: globos
-        x: 420
-        y: 78
-        width: 325
-        height: 411
-        currentFrame: 0
-        source: "Globos.gif"
-        playing: false
+    Globos{
+        x: 483
+        y: 87
+    }
 
-        MouseArea{
-            id: areaMouse
-            anchors.fill: parent
-            onClicked: {
-                globos.currentFrame += 1
-            }
-        }
+    Pantalla {
+        id: pantalla
+        x: 173
+        y: 277
     }
 }
 
