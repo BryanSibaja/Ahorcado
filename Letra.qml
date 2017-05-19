@@ -19,7 +19,7 @@ Rectangle {
         }
     }
 
-    TextInput {
+    Text {
         id: texto
         color: "#ffffff"
         anchors.fill: parent
@@ -44,7 +44,18 @@ Rectangle {
         anchors.fill: parent
         onClicked: {
             ocultar.start();
+            ventana.presionado(texto.text)
             enabled = false;
         }
+    }
+
+    function habilitar(){
+        opacity = 1;
+        texto.opacity = 1;
+        areaMouse.enabled = true;
+    }
+
+    Component.onCompleted: {
+        teclado1.reinicio.connect(habilitar);
     }
 }

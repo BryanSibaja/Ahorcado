@@ -1,5 +1,7 @@
 import QtQuick 2.3
 import QtQuick.Window 2.2
+import QtQuick.Controls 2.1
+
 import "logica.js" as Experto
 
 Window {
@@ -9,10 +11,17 @@ Window {
     title: "HangMan"
     visible: true
 
-    MouseArea {
-        anchors.fill: parent
+    function presionado(a){
+        Experto.letra(a);
+    }
+
+    Button {
+        x: 690
+        y: 555
+        text: "Iniciar"
         onClicked: {
-            pantalla.text = Experto.obtenerPalabra()
+            Experto.iniciar();
+            teclado1.reinicio();
         }
     }
 

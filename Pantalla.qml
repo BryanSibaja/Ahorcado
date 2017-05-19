@@ -6,4 +6,8 @@ Text{
     font.family: "Tahoma"
     font.bold: true
     font.pointSize: 30
+
+    function cambiar(texto){
+        text = texto
+    }
 }
