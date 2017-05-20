@@ -1,39 +1,29 @@
 import QtQuick 2.0
-Rectangle {
-    id: rectangulo
+Item {
+    id: letra
     property alias letra: texto.text
     x: 0
     y: 0
-    width: 40
-    height: 40
-    radius: 8
-    gradient: Gradient {
-        GradientStop {
-            position: 0
-            color: "#44a2ff"
-        }
-
-        GradientStop {
-            position: 1
-            color: "#10304f"
-        }
-    }
+    width: 30
+    height: 50
 
     Text {
         id: texto
-        color: "#ffffff"
-        anchors.fill: parent
+        color: "#489c21"
+        wrapMode: Text.WordWrap
         text: letra
-        font.pointSize: 16
-        font.bold: true
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
-    }
+        font.pixelSize: 48
+        lineHeight: 0.75
+        opacity: parent.opacity
+        font.bold: true
 
+    }
 
     NumberAnimation {
         id: ocultar
-        targets: [texto, rectangulo]
+        targets: letra
         properties: "opacity"
         from: 1; to: 0
         duration: 200
@@ -43,15 +33,14 @@ Rectangle {
         id: areaMouse
         anchors.fill: parent
         onClicked: {
-            ocultar.start();
-            ventana.presionado(texto.text)
             enabled = false;
+            letra.opacity = 0;
+            ventana.presionado(texto.text)
         }
     }
 
     function habilitar(){
-        opacity = 1;
-        texto.opacity = 1;
+        letra.opacity = 1
         areaMouse.enabled = true;
     }
 

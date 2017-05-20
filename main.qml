@@ -13,27 +13,32 @@ Window {
 
     function presionado(a){
         Experto.letra(a);
+        globo.currentFrame = 10 - Experto.vidas;
+    }
+
+    Component.onCompleted: {
+        Experto.iniciar()
     }
 
     Button {
-        x: 690
-        y: 555
+        x: 25
+        y: 325
         text: "Iniciar"
         onClicked: {
             Experto.iniciar();
-            teclado1.reinicio();
         }
     }
 
     Teclado {
         id: teclado1
-        x: 134
-        y: 514
+        width: parent.width
+        anchors.bottom: parent.bottom
     }
 
     Globos{
-        x: 483
-        y: 87
+        id: globo
+        anchors.top: parent.top
+        anchors.right: parent.right
     }
 
     Pantalla {

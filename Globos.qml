@@ -7,12 +7,4 @@ AnimatedImage{
     currentFrame: 0
     source: "Globos.gif"
     playing: false
-
-    MouseArea{
-        id: areaMouse
-        anchors.fill: parent
-        onClicked: {
-            globos.currentFrame += 1
-        }
-    }
 }

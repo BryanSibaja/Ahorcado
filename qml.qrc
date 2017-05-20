@@ -7,5 +7,6 @@
         <file>Globos.qml</file>
         <file>logica.js</file>
         <file>Pantalla.qml</file>
+        <file>zwartevilt.png</file>
     </qresource>
 </RCC>
