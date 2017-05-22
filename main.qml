@@ -21,8 +21,9 @@ Window {
 
     Globos{
         id: globo
-        anchors.horizontalCenter: parent.horizontalCenter
         anchors.top: parent.top
+        anchors.topMargin: 10
+        anchors.horizontalCenter: parent.horizontalCenter
     }
 
     function presionado(a){
@@ -40,7 +41,7 @@ Window {
     Pantalla {
         id: pantalla
         anchors.horizontalCenter: parent.horizontalCenter
-        y: parent.height/4
+        y: parent.height * 0.3
     }
 
     Teclado {
