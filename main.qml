@@ -21,7 +21,7 @@ Window {
 
     Globos{
         id: globo
-        anchors.right: parent.right
+        anchors.horizontalCenter: parent.horizontalCenter
         anchors.top: parent.top
     }
 

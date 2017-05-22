@@ -13,5 +13,7 @@
         <file>imagenes/zwartevilt.png</file>
         <file>imagenes/globos1.svg</file>
         <file>Mensaje.qml</file>
+        <file>imagenes/lose.svg</file>
+        <file>imagenes/win.svg</file>
     </qresource>
 </RCC>

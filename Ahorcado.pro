@@ -27,5 +27,7 @@ DISTFILES += \
     imagenes/paper.png \
     imagenes/vintage-leaves.png \
     imagenes/zwartevilt.png \
-    Mensaje.qml
+    Mensaje.qml \
+    imagenes/lose.svg \
+    imagenes/win.svg
 

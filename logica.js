@@ -1,7 +1,7 @@
 var vocabulario = [
             "TORNADO","EARTHQUAKE","BLIZZARD","TSUNAMI","HURRIACANE",
             "FLOD","ERUPTION","AVALANCHE","LANDSLIDE","DROUGHT","WILDFIRE",
-            "THUNDERSTORM","CICLON"]
+            "THUNDERSTORM","CYCLONE","WHIRLWIND","SANDSTORM","HAILSTORM"]
 ;
 var vidas = 5;
 var palabra = '';
@@ -16,12 +16,12 @@ function letra(a){
         }
         pantalla.text = oculta;
         if(palabra === oculta){
-            mensaje.visible = true;
+            mensaje.activar(true);
         }
     }else{
         globo.cantidad = --vidas;
         if(vidas == 0){
-            mensaje.visible = true;
+            mensaje.activar(false);
         }
     }
 }
