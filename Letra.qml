@@ -1,17 +1,22 @@
 import QtQuick 2.0
+import QtMultimedia 5.8
+
 Item {
     id: letra
     property alias letra: texto.text
+    property alias color: texto.color
     x: 0
     y: 0
     width: 30
     height: 50
 
+    FontLoader { id: crayon; source: "qrc:/DK\ Cool\ Crayon.ttf" }
+
     Text {
         id: texto
-        color: "#489c21"
         wrapMode: Text.WordWrap
         text: letra
+        font.family: crayon.name
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
         font.pixelSize: 48
@@ -29,22 +34,36 @@ Item {
         duration: 200
     }
 
+    NumberAnimation {
+        id: mostrar
+        targets: letra
+        properties: "opacity"
+        from: 0; to: 1
+        duration: 200
+    }
+
+    SoundEffect {
+        id: pop
+        source: "pop_drip.wav"
+    }
+
     MouseArea {
         id: areaMouse
         anchors.fill: parent
         onClicked: {
-            enabled = false;
-            letra.opacity = 0;
+            enabled = false
+            ocultar.start()
+            pop.play()
             ventana.presionado(texto.text)
         }
     }
 
     function habilitar(){
-        letra.opacity = 1
-        areaMouse.enabled = true;
+        mostrar.start()
+        areaMouse.enabled = true
     }
 
     Component.onCompleted: {
-        teclado1.reinicio.connect(habilitar);
+        teclado1.reinicio.connect(habilitar)
     }
 }

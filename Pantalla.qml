@@ -2,12 +2,10 @@ import QtQuick 2.0
 
 Text{
     id: palabra
-    color: "#ca3ab2"
-    font.family: "Tahoma"
+    color: "#e60f5e"
+    font.family: crayon.name
     font.bold: true
-    font.pointSize: 30
+    font.pointSize: 50
 
-    function cambiar(texto){
-        text = texto
-    }
+    FontLoader { id: crayon; source: "qrc:/DK\ Cool\ Crayon.ttf" }
 }

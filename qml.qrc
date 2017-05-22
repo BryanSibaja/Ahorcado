@@ -1,12 +1,17 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
-        <file>Globos.gif</file>
         <file>Letra.qml</file>
         <file>Teclado.qml</file>
         <file>Globos.qml</file>
         <file>logica.js</file>
         <file>Pantalla.qml</file>
-        <file>zwartevilt.png</file>
+        <file>DK Cool Crayon.ttf</file>
+        <file>pop_drip.wav</file>
+        <file>imagenes/paper.png</file>
+        <file>imagenes/vintage-leaves.png</file>
+        <file>imagenes/zwartevilt.png</file>
+        <file>imagenes/globos1.svg</file>
+        <file>Mensaje.qml</file>
     </qresource>
 </RCC>

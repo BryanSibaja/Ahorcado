@@ -1,10 +1,12 @@
 import QtQuick 2.0
+Row{
+    property alias cantidad: repetidor.model
 
-AnimatedImage{
-    id: globos
-    width: 325
-    height: 411
-    currentFrame: 0
-    source: "Globos.gif"
-    playing: false
+    Repeater{
+        id: repetidor
+        delegate: Image {
+            id: g1
+            source: "imagenes/globos1.svg"
+        }
+    }
 }

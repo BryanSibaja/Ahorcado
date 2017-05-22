@@ -1,50 +1,58 @@
 import QtQuick 2.3
 import QtQuick.Window 2.2
-import QtQuick.Controls 2.1
 
 import "logica.js" as Experto
 
 Window {
     id: ventana
-    width: 800
+    width: 600
     height: 600
+    minimumHeight: 500
+    minimumWidth: 450
     title: "HangMan"
     visible: true
 
-    function presionado(a){
-        Experto.letra(a);
-        globo.currentFrame = 10 - Experto.vidas;
-    }
-
-    Component.onCompleted: {
-        Experto.iniciar()
-    }
-
-    Button {
-        x: 25
-        y: 325
-        text: "Iniciar"
-        onClicked: {
-            Experto.iniciar();
-        }
-    }
-
-    Teclado {
-        id: teclado1
-        width: parent.width
-        anchors.bottom: parent.bottom
+    Image {
+        id: fondo
+        fillMode: Image.Tile
+        anchors.fill: parent
+        source: "imagenes/vintage-leaves.png"
     }
 
     Globos{
         id: globo
-        anchors.top: parent.top
         anchors.right: parent.right
+        anchors.top: parent.top
+    }
+
+    function presionado(a){
+        Experto.letra(a)
+    }
+
+    function iniciar(){
+        Experto.iniciar()
+    }
+
+    Component.onCompleted: {
+        iniciar()
     }
 
     Pantalla {
         id: pantalla
-        x: 173
-        y: 277
+        anchors.horizontalCenter: parent.horizontalCenter
+        y: parent.height/4
+    }
+
+    Teclado {
+        id: teclado1
+        width: 586
+        height: parent.height * 0.4
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.bottom: parent.bottom
+    }
+
+    Mensaje{
+        id: mensaje
+        anchors.fill: parent
     }
 }
-

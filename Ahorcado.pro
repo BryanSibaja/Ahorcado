@@ -19,5 +19,13 @@ DISTFILES += \
     Pantalla.qml \
     Letra.qml \
     Teclado.qml \
-    Globos.qml
+    Globos.qml \
+    DK Cool Crayon.ttf \
+    vintage-leaves.png \
+    imagenes/globos1.svg \
+    pop_drip.wav \
+    imagenes/paper.png \
+    imagenes/vintage-leaves.png \
+    imagenes/zwartevilt.png \
+    Mensaje.qml
 
