@@ -4,16 +4,15 @@ import QtMultimedia 5.8
 Item {
     id: letra
     property alias letra: texto.text
-    property alias color: texto.color
-    x: 0
-    y: 0
-    width: 30
-    height: 50
+    property string fondo: "#d81d13"
+    width: texto.paintedWidth
+    height: texto.paintedHeight
 
     FontLoader { id: crayon; source: "qrc:/DK\ Cool\ Crayon.ttf" }
 
     Text {
         id: texto
+        color: areaMouse.containsMouse ? Qt.darker(fondo) : fondo
         wrapMode: Text.WordWrap
         text: letra
         font.family: crayon.name
@@ -50,6 +49,7 @@ Item {
     MouseArea {
         id: areaMouse
         anchors.fill: parent
+        hoverEnabled: true
         onClicked: {
             enabled = false
             ocultar.start()

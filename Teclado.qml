@@ -21,31 +21,31 @@ Image{
         rows: 3
         spacing: 20
 
-        Letra{ color: "#ff5e5e"; letra: "A"}
-        Letra{ color: "#63ff5e";letra: "B"}
-        Letra{ color: "#5e63ff";letra: "C"}
-        Letra{ color: "#ff5ea1";letra: "D"}
-        Letra{ color: "#63ff5e";letra: "E"}
-        Letra{ color: "#5ea1ff";letra: "F"}
-        Letra{ color: "#ff5e5e";letra: "G"}
-        Letra{ color: "#5e63ff";letra: "H"}
-        Letra{ color: "#fff716";letra: "I"}
-        Letra{ color: "#ff5ea1";letra: "J"}
-        Letra{ color: "#5e63ff";letra: "K"}
-        Letra{ color: "#38ff16";letra: "L"}
-        Letra{ color: "#63ff5e";letra: "M"}
-        Letra{ color: "#5e63ff";letra: "N"}
-        Letra{ color: "#ff5ea1";letra: "O"}
-        Letra{ color: "#fff716";letra: "P"}
-        Letra{ color: "#8216ff";letra: "Q"}
-        Letra{ color: "#ff5e5e";letra: "R"}
-        Letra{ color: "#5e63ff";letra: "S"}
-        Letra{ color: "#38ff16";letra: "T"}
-        Letra{ color: "#ff5ea1";letra: "U"}
-        Letra{ color: "#8216ff";letra: "V"}
-        Letra{ color: "#63ff5e";letra: "W"}
-        Letra{ color: "#5ea1ff";letra: "X"}
-        Letra{ color: "#fff716";letra: "Y"}
-        Letra{ color: "#ff5e5e";letra: "Z"}
+        Letra{ fondo: "#ff5e5e"; letra: "A"}
+        Letra{ fondo: "#63ff5e";letra: "B"}
+        Letra{ fondo: "#5e63ff";letra: "C"}
+        Letra{ fondo: "#ff5ea1";letra: "D"}
+        Letra{ fondo: "#63ff5e";letra: "E"}
+        Letra{ fondo: "#5ea1ff";letra: "F"}
+        Letra{ fondo: "#ff5e5e";letra: "G"}
+        Letra{ fondo: "#5e63ff";letra: "H"}
+        Letra{ fondo: "#fff716";letra: "I"}
+        Letra{ fondo: "#ff5ea1";letra: "J"}
+        Letra{ fondo: "#5e63ff";letra: "K"}
+        Letra{ fondo: "#38ff16";letra: "L"}
+        Letra{ fondo: "#63ff5e";letra: "M"}
+        Letra{ fondo: "#5e63ff";letra: "N"}
+        Letra{ fondo: "#ff5ea1";letra: "O"}
+        Letra{ fondo: "#fff716";letra: "P"}
+        Letra{ fondo: "#8216ff";letra: "Q"}
+        Letra{ fondo: "#ff5e5e";letra: "R"}
+        Letra{ fondo: "#5e63ff";letra: "S"}
+        Letra{ fondo: "#38ff16";letra: "T"}
+        Letra{ fondo: "#ff5ea1";letra: "U"}
+        Letra{ fondo: "#8216ff";letra: "V"}
+        Letra{ fondo: "#63ff5e";letra: "W"}
+        Letra{ fondo: "#5ea1ff";letra: "X"}
+        Letra{ fondo: "#fff716";letra: "Y"}
+        Letra{ fondo: "#ff5e5e";letra: "Z"}
     }
 }

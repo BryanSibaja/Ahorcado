@@ -1,8 +1,4 @@
-var vocabulario = [
-            "TORNADO","EARTHQUAKE","BLIZZARD","TSUNAMI","HURRIACANE",
-            "FLOD","ERUPTION","AVALANCHE","LANDSLIDE","DROUGHT","WILDFIRE",
-            "THUNDERSTORM","CYCLONE","WHIRLWIND","SANDSTORM","HAILSTORM"]
-;
+var vocabulario = [];
 var vidas = 5;
 var palabra = '';
 var oculta = '';

@@ -15,7 +15,7 @@ include(deployment.pri)
 
 DISTFILES += \
     logica.js \
-    datos.json \
+    datos.js \
     Pantalla.qml \
     Letra.qml \
     Teclado.qml \

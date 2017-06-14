@@ -2,13 +2,14 @@ import QtQuick 2.3
 import QtQuick.Window 2.2
 
 import "logica.js" as Experto
+import "datos.js" as Datos
 
 Window {
     id: ventana
     width: 600
     height: 600
     minimumHeight: 500
-    minimumWidth: 450
+    minimumWidth: 520
     title: "HangMan"
     visible: true
 
@@ -35,6 +36,7 @@ Window {
     }
 
     Component.onCompleted: {
+        Experto.vocabulario = Datos.vocabulario
         iniciar()
     }
 
@@ -50,6 +52,7 @@ Window {
         height: parent.height * 0.4
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.bottom: parent.bottom
+        visible: !mensaje.visible
     }
 
     Mensaje{

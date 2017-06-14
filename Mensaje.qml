@@ -4,7 +4,6 @@ import QtQuick.Controls 2.1
 Rectangle{
     property alias texto: respuesta.text
     visible: false
-    opacity: 0.85
 
     function activar(ganar){
         visible = true;

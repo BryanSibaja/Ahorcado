@@ -15,5 +15,6 @@
         <file>Mensaje.qml</file>
         <file>imagenes/lose.svg</file>
         <file>imagenes/win.svg</file>
+        <file>datos.js</file>
     </qresource>
 </RCC>
