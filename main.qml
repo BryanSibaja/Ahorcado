@@ -39,6 +39,7 @@ Window {
     Component.onCompleted: {
         Experto.vocabulario = Datos.vocabulario
         iniciar()
+        info.open()
     }
 
     Pantalla {
